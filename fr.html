@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       #h{
+              text-align: center;
+              color: brown;
+              background-color: black;
+              font-size: 30px;
+       }
+       .c{
+              font-size: 20px;
+              color: indianred;
+              /* background-color: black; */
+              display: inline;
+              border: 3px double red;
+              border-radius: 20px;
+       }
+    </style>
+</head>
+<body>
+       <!-- id selector of h1 tag -->
+    <h1 id="h"><u>HTML FORM ELEMENTS</u></h1>
+    <h3 class="c">Label element</h3>
+    <form>
+        <label for="student">Student</label>
+        <input type="radio"
+                name="Occupation"
+                id="student"
+                value="student"><br>
+        <label for="teacher">Teacher</label>
+        <input type="radio"
+                name="Occupation"
+                id="teacher"
+                value="teacher"><br>
+        
+        <h3>Input element</h3>
+        <!-- input type="text" -->
+        First name : <input type="text" required>
+        <br>
+        <br>
+        Last name : <input type="text" required>
+        <br>
+        <br>
+        Dob : <input type="date"
+                     id="Date"
+                     required>
+        <br><br>
+        <!-- input type="password" -->
+        <label for="email">Email:  </label>
+        <input type="email"
+                name="email"
+                placeholder="Email address"
+                required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+/.[a-z]">
+                <br>
+                <br>
+                <label for="password">Password: </label>
+                <input type="password"
+                       name="password"
+                       placeholder="Password"
+                       required>
+                <br>
+                <br>
+                <input type="submit"
+                       value="Login">
+                <br>
+        <!-- input type="checkbox" -->
+        <input type="checkbox"
+               name="check"
+               value="1"
+               checked> Checked by default
+        <br>
+        <input type="checkbox"
+               name="check"
+               value="2"> not checked by default
+               <br><br>
+        <!-- input type="button" -->
+        <input type="button"
+               onclick="send ()"
+               value="submit">
+        <br><br>
+        <!-- input type="color" -->
+        <input type="color"
+               value="#000150">
+    </form>
+</body>
+</html>
